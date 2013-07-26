@@ -1,0 +1,64 @@
+<%= form_for(@server, :html => {:multipart => true}) do |f| %>
+    <% if @server.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@server.errors.count, "error") %> prohibited this server from being saved:</h2>
+
+          <ul>
+            <% @server.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+
+      <%= f.label :name %>
+      <br/>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :QR_code %>
+      <br/>
+      <%= f.text_field :QR_code, readonly: true %>
+    </div>
+    <div class="field">
+      <%= f.label :IP %>
+      <br/>
+      <%= f.text_field :IP %>
+    </div>
+    <div class="field">
+      <%= f.label :IDR %>
+      <br/>
+      <%= f.text_field :IDR %>
+    </div>
+    <div class="field">
+      <%= f.label :CPU %>
+      <br/>
+      <%= f.select :CPU, ((0..500)) %> Core
+    </div>
+    <div class="field">
+      <%= f.label :RAM %>
+      <br/>
+      <%= f.select :RAM, (0..128) %> Getbyte
+    </div>
+    <div class="field">
+      <%= f.label :Storage %>
+      <br/>
+      <%= f.number_field :Storage %> Getbyte
+    </div>
+    <div class="field">
+      <%= f.label :MAC %>
+      <br/>
+      <%= f.text_field :MAC %>
+    </div>
+    <div>
+      <%= f.label :image %> </br>
+      <%= f.file_field :image %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+
+<% end %>

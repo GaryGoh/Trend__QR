@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  QR_code: MyString
+  IP: MyString
+  IDR: MyString
+  CPU: 1
+  RAM: 1
+  Storage: 1
+  MAC: MyString
+
+two:
+  name: MyString
+  QR_code: MyString
+  IP: MyString
+  IDR: MyString
+  CPU: 1
+  RAM: 1
+  Storage: 1
+  MAC: MyString

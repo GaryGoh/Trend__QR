@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Image:</b>
+  <% if @server.has_image? %>
+      <%= image_tag @server.image_path %>
+  <% else %> No image!
+  <% end %>
+</p>
+
+<p>
+  <b>Server_Name:</b>
+  <%= @server.name %>
+</p>
+
+<p>
+  <b>QR_code:</b>
+  <%= @server.QR_code %>
+</p>
+
+<p>
+  <b>IP:</b>
+  <%= @server.IP %>
+</p>
+
+<p>
+  <b>IDR:</b>
+  <%= @server.IDR %>
+</p>
+
+<p>
+  <b>CPU:</b>
+  <%= @server.CPU %>
+</p>
+
+<p>
+  <b>RAM:</b>
+  <%= @server.RAM %>
+</p>
+
+<p>
+  <b>Storage:</b>
+  <%= @server.Storage %>
+</p>
+
+<p>
+  <b>MAC:</b>
+  <%= @server.MAC %>
+</p>
+
+<%qr_url = 'http://0.0.0.0:3000/servers/'+params[:id] %>
+<%= image_tag goqr(data: qr_url, size: '64x64') %>  </br></br>
+
+<%= link_to 'Edit', edit_server_path(@server) %> |
+<%= link_to 'Back', servers_path %>
