@@ -14,7 +14,7 @@
 
 <% @cables.each do |cable| %>
   <tr>
-    <td><%= cable.server_id %></td>
+    <td><%= cable.server ? cable.server.name : '' %></td>
     <td><%= cable.to_end %></td>
     <td><%= cable.from_nic %></td>
     <td><%= cable.to_nic %></td>

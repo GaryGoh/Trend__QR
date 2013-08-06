@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/server.rb" afterPath="$PROJECT_DIR$/app/models/server.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/index.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/show.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/show.html.erb" />
     </list>
     <ignored path="TrendQR.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375819631924" ignored="false" />
-    <file path="/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375822797542" ignored="false" />
+    <file path="/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375828451459" ignored="false" />
     <file path="$USER_HOME$/guestbook/db/schema.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375777636519" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375806261384" ignored="false" />
     <file path="/_form.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375826060076" ignored="false" />
@@ -21,7 +20,7 @@
     <file path="$USER_HOME$/students/db/schema.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375788062012" ignored="false" />
     <file path="$USER_HOME$/students/app/models/student.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375800404764" ignored="false" />
     <file path="/student.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375797704099" ignored="false" />
-    <file path="/index.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375821787921" ignored="false" />
+    <file path="/index.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375827978857" ignored="false" />
     <file path="$USER_HOME$/students/app/models/award.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375820179492" ignored="false" />
     <file path="$USER_HOME$/students/log/development.log" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375794448169" ignored="false" />
     <file path="$USER_HOME$/students/app/views/students/index.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375807215001" ignored="false" />
@@ -56,13 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="8" selection-start="679" selection-end="679" vertical-scroll-proportion="-33.125">
-              <folding>
-                <marker date="1374673058000" expanded="true" signature="414:677" placeholder="for ... end" />
-              </folding>
+            <state line="66" column="39" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.7">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,7 +67,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="3" selection-start="510" selection-end="510" vertical-scroll-proportion="-16.25">
+            <state line="4" column="9" selection-start="50" selection-end="50" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -85,10 +82,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/cables/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="45" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/cables/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/cables/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="56" selection-start="604" selection-end="604" vertical-scroll-proportion="0.41538462">
+            <state line="18" column="56" selection-start="604" selection-end="604" vertical-scroll-proportion="-11.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/cables/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="49" selection-start="278" selection-end="278" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/cables/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -105,15 +138,6 @@
       </file>
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -139,14 +163,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/cables/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/cables_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/servers/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/cables/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/servers/show.html.erb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/models/server.rb" />
         <option value="$PROJECT_DIR$/app/views/cables/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/cables/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/cables/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/servers/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/servers/show.html.erb" />
       </list>
     </option>
   </component>
@@ -589,9 +613,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1374673058000" expanded="true" signature="414:677" placeholder="for ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -605,18 +627,14 @@
     <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1374673058000" expanded="true" signature="414:677" placeholder="for ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1374673058000" expanded="true" signature="414:677" placeholder="for ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -624,22 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="510" selection-end="510" vertical-scroll-proportion="-16.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="8" selection-start="679" selection-end="679" vertical-scroll-proportion="-33.125">
-          <folding>
-            <marker date="1374673058000" expanded="true" signature="414:677" placeholder="for ... end" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,9 +673,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cables/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="45" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cables/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cables/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cables/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="604" selection-end="604" vertical-scroll-proportion="0.41538462">
+        <state line="18" column="56" selection-start="604" selection-end="604" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cables/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="278" selection-end="278" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="50" selection-end="50" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="39" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.7">
           <folding />
         </state>
       </provider>

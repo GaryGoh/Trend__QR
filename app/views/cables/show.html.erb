@@ -2,7 +2,7 @@
 
 <p>
   <b>Server:</b>
-  <%= @cable.server_id %>
+  <%= @cable.server ? @cable.server.name : '' %>
 </p>
 
 <p>

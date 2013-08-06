@@ -2,14 +2,15 @@
 
 <table>
   <tr>
-    <th>Server_Name</th>
-    <th>QR_code</th>
-    <th>IP</th>
-    <th>IDR</th>
-    <th>CPU</th>
-    <th>RAM</th>
-    <th>Storage</th>
-    <th>MAC</th>
+    <th> Server_Name </th>
+    <th> QR_code </th>
+    <th> IP </th>
+    <th> IDR </th>
+    <th> CPU </th>
+    <th> RAM </th>
+    <th> Storage </th>
+    <th> MAC </th>
+    <th> Number of Cables </th>
     <th></th>
     <th></th>
     <th></th>
@@ -25,6 +26,7 @@
     <td><%= server.RAM %></td>
     <td><%= server.Storage %></td>
     <td><%= server.MAC %></td>
+    <td><%= server.cables.count%></td>
     <td><%= link_to 'Show', server %></td>
     <td><%= link_to 'Edit', edit_server_path(server) %></td>
     <td><%= link_to 'Destroy', server, method: :delete, data: { confirm: 'Are you sure?' } %></td>
