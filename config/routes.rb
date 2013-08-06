@@ -1,4 +1,7 @@
 TrendQr::Application.routes.draw do
+  resources :cables
+
+
   resources :servers
 
 

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Server:</b>
+  <%= @cable.server_id %>
+</p>
+
+<p>
+  <b>To end:</b>
+  <%= @cable.to_end %>
+</p>
+
+<p>
+  <b>From nic:</b>
+  <%= @cable.from_nic %>
+</p>
+
+<p>
+  <b>To nic:</b>
+  <%= @cable.to_nic %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @cable.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_cable_path(@cable) %> |
+<%= link_to 'Back', cables_path %>

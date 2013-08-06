@@ -2,6 +2,7 @@ class Server < ActiveRecord::Base
   attr_accessible :CPU, :IDR, :IP, :MAC, :QR_code, :RAM, :Storage, :name, :image
   #attr_accessor :image
 
+  has_many :cables :dependent => :destroy
 
   # To constrain the data
 

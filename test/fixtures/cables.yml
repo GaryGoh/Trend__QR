@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  server_id: 1
+  to_end: MyString
+  from_nic: MyString
+  to_nic: MyString
+  color: MyString
+
+two:
+  server_id: 1
+  to_end: MyString
+  from_nic: MyString
+  to_nic: MyString
+  color: MyString
