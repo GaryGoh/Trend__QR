@@ -22,11 +22,11 @@ class Server < ActiveRecord::Base
 
   def MAC_blank?
     if self.MAC.blank?
-         return false
-      else return true
+      return false
+    else
+      return true
     end
   end
-
 
 
   @@qr
