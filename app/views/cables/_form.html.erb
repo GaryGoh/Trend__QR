@@ -1,37 +1,42 @@
 <%= form_for(@cable) do |f| %>
-  <% if @cable.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@cable.errors.count, "error") %> prohibited this cable from being saved:</h2>
+    <% if @cable.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@cable.errors.count, "error") %> prohibited this cable from being saved:</h2>
 
-      <ul>
-      <% @cable.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% @cable.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :server_id %>
+      <br/>
+      <%= f.select :server_id, Server.find(:all, :order => "name").collect { |server| [server.name, server.id] } %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :server_id %><br />
-    <%= f.number_field :server_id %>
-  </div>
-  <div class="field">
-    <%= f.label :to_end %><br />
-    <%= f.text_field :to_end %>
-  </div>
-  <div class="field">
-    <%= f.label :from_nic %><br />
-    <%= f.text_field :from_nic %>
-  </div>
-  <div class="field">
-    <%= f.label :to_nic %><br />
-    <%= f.text_field :to_nic %>
-  </div>
-  <div class="field">
-    <%= f.label :color %><br />
-    <%= f.text_field :color %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="field">
+      <%= f.label :to_end %>
+      <br/>
+      <%= f.text_field :to_end %>
+    </div>
+    <div class="field">
+      <%= f.label :from_nic %>
+      <br/>
+      <%= f.text_field :from_nic %>
+    </div>
+    <div class="field">
+      <%= f.label :to_nic %>
+      <br/>
+      <%= f.text_field :to_nic %>
+    </div>
+    <div class="field">
+      <%= f.label :color %>
+      <br/>
+      <%= f.text_field :color %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>

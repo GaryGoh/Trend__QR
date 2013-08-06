@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130718165759) do
+ActiveRecord::Schema.define(:version => 20130806213713) do
+
+  create_table "cables", :force => true do |t|
+    t.integer  "server_id"
+    t.string   "to_end"
+    t.string   "from_nic"
+    t.string   "to_nic"
+    t.string   "color"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "servers", :force => true do |t|
     t.string   "name"
