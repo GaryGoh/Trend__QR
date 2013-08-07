@@ -4,85 +4,85 @@
 <div class="row-fluid">
 
 
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Image:</b>
-  <% if @server.has_image? %>
-      <%= image_tag @server.image_path %>
-  <% else %> No image!
-  <% end %>
-</p>
+  <p>
+    <b>Image:</b>
+    <% if @server.has_image? %>
+        <%= image_tag @server.image_path %>
+    <% else %> No image!
+    <% end %>
+  </p>
 
-<p>
-  <b>Server_Name:</b>
-  <%= @server.name %>
-</p>
+  <p>
+    <b>Server_Name:</b>
+    <%= @server.name %>
+  </p>
 
-<p>
-  <b>QR_code:</b>
-  <%= @server.QR_code %>
-</p>
+  <p>
+    <b>QR_code:</b>
+    <%= @server.QR_code %>
+  </p>
 
-<p>
-  <b>IP:</b>
-  <%= @server.IP %>
-</p>
+  <p>
+    <b>IP:</b>
+    <%= @server.IP %>
+  </p>
 
-<p>
-  <b>IDR:</b>
-  <%= @server.IDR %>
-</p>
+  <p>
+    <b>IDR:</b>
+    <%= @server.IDR %>
+  </p>
 
-<p>
-  <b>CPU:</b>
-  <%= @server.CPU %>
-</p>
+  <p>
+    <b>CPU:</b>
+    <%= @server.CPU %>
+  </p>
 
-<p>
-  <b>RAM:</b>
-  <%= @server.RAM %>
-</p>
+  <p>
+    <b>RAM:</b>
+    <%= @server.RAM %>
+  </p>
 
-<p>
-  <b>Storage:</b>
-  <%= @server.Storage %>
-</p>
+  <p>
+    <b>Storage:</b>
+    <%= @server.Storage %>
+  </p>
 
-<p>
-  <b>MAC:</b>
-  <%= @server.MAC %>
-</p>
+  <p>
+    <b>MAC:</b>
+    <%= @server.MAC %>
+  </p>
 
-<% qr_url = 'http://0.0.0.0:3000/servers/'+params[:id] %>
-<%= image_tag goqr(data: qr_url, size: '64x64') %>  </br></br>
+  <% qr_url = 'http://0.0.0.0:3000/servers/'+params[:id] %>
+  <%= image_tag goqr(data: qr_url, size: '64x64') %>  </br></br>
 
-<%= link_to 'Edit', edit_server_path(@server) %> |
-<%= link_to 'Add Cable', new_server_cable_path(@server) %> |
-<%= link_to 'Back', servers_path %>
+  <%= link_to 'Edit', edit_server_path(@server) %> |
+  <%= link_to 'Add Cable', new_server_cable_path(@server) %> |
+  <%= link_to 'Back', servers_path %>
 
-<!--show the connnected cables-->
-<h2>Cables in <%= @server.name %></h2>
+  <!--show the connnected cables-->
+  <h2>Cables in <%= @server.name %></h2>
 
-<table class="table table-hover">
-  <tr>
-    <th> To_end</th>
-    <th> From_NIC</th>
-    <th> To_NIC</th>
-    <th> Color</th>
-    <th></th>
-    <th></th>
-  </tr>
-  <% for cable in @server.cables %>
-      <tr>
-        <td><%= cable.to_end %></td>
-        <td>NIC <%= cable.from_nic %></td>
-        <td><%= cable.to_nic %></td>
-        <td><%= cable.color %></td>
-        <td><%= link_to 'Edit', edit_server_cable_path(@server, cable) %></td>
-        <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: {confirm: 'Are you sure?'} %></td>
-      </tr>
+  <table class="table table-hover">
+    <tr>
+      <th> To_end</th>
+      <th> From_NIC</th>
+      <th> To_NIC</th>
+      <th> Color</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <% for cable in @server.cables %>
+        <tr>
+          <td><%= cable.to_end %></td>
+          <td>NIC <%= cable.from_nic %></td>
+          <td><%= cable.to_nic %></td>
+          <td><%= cable.color %></td>
+          <td><%= link_to 'Edit', edit_server_cable_path(@server, cable) %></td>
+          <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
 
-  <% end %>
-</table>
-    </div>
+    <% end %>
+  </table>
+</div>
