@@ -1,8 +1,8 @@
 TrendQr::Application.routes.draw do
-  resources :cables
 
-
-  resources :servers
+  resources :servers do
+    resources :cables
+  end
 
 
   # The priority is based upon order of creation:

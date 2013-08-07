@@ -52,24 +52,30 @@
 <%= image_tag goqr(data: qr_url, size: '64x64') %>  </br></br>
 
 <%= link_to 'Edit', edit_server_path(@server) %> |
+<%= link_to 'Add Cable', new_server_cable_path(@server) %> |
 <%= link_to 'Back', servers_path %>
 
 <!--show the connnected cables-->
 <h2>Cables in <%= @server.name %></h2>
 
-    <table>
-      <tr>
-        <th> To_end</th>
-        <th> From_NIC</th>
-        <th> To_NIC</th>
-        <th> Color</th>
-      </tr>
-      <% for cable in @server.cables %>
+<table>
+  <tr>
+    <th> To_end</th>
+    <th> From_NIC</th>
+    <th> To_NIC</th>
+    <th> Color</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% for cable in @server.cables %>
       <tr>
         <td><%= cable.to_end %></td>
         <td><%= cable.from_nic %></td>
         <td><%= cable.to_nic %></td>
         <td><%= cable.color %></td>
+        <td><%= link_to "Edit", edit_server_cable_path(@server,cable) %></td>
+        <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    </table>
-<% end %>
+
+  <% end %>
+</table>

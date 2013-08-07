@@ -1,4 +1,4 @@
-<%= form_for(@cable) do |f| %>
+<%= form_for([@server,@cable]) do |f| %>
     <% if @cable.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@cable.errors.count, "error") %> prohibited this cable from being saved:</h2>
