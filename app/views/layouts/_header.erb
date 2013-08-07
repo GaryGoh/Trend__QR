@@ -2,6 +2,9 @@
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "TMQR", servers_url, id: "logo" %>
+      <form class="navbar-search pull-left" id="search">
+        <input type="text" class="search-query" placeholder="Search">
+      </form>
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home",    servers_url %></li>

@@ -1,10 +1,13 @@
-<button type="button" class="btn btn-success">Success</button>
 <!---->
 <!---->
 <div class="row-fluid">
 
+  <% if notice != nil  %>
+      <div class="alert alert-success">
+        <%= notice %>
+      </div>
+  <% end %>
 
-  <p id="notice"><%= notice %></p>
 
   <p>
     <b>Image:</b>
@@ -86,3 +89,17 @@
     <% end %>
   </table>
 </div>
+
+<div class="btn-group">
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
