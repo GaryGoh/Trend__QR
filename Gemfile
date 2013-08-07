@@ -8,7 +8,7 @@ gem 'rails', '3.2.12'
 gem 'sqlite3'
 gem 'goqr'
 
-gem 'sass-rails', '~> 3.2'
+gem 'sass-rails', '~> 3.2.10'
 gem 'bootstrap-sass', '~> 2.3.2.1'
 
 # Gems used only for assets and not required
