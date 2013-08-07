@@ -1,4 +1,4 @@
-<%= form_for([@server,@cable]) do |f| %>
+<%= form_for([@server, @cable]) do |f| %>
     <% if @cable.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@cable.errors.count, "error") %> prohibited this cable from being saved:</h2>
@@ -11,11 +11,11 @@
         </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :server_id %>
-      <br/>
-      <%= f.select :server_id, Server.find(:all, :order => "name").collect { |server| [server.name, server.id] } %>
-    </div>
+    <!--<div class="field">-->
+      <!--<%= f.label :server_id %>-->
+      <!--<br/>-->
+      <!--<%= f.select :server_id, Server.find(:all, :order => "name").collect { |server| [server.name, server.id] } %>-->
+    <!--</div>-->
     <div class="field">
       <%= f.label :to_end %>
       <br/>
@@ -24,7 +24,7 @@
     <div class="field">
       <%= f.label :from_nic %>
       <br/>
-      <%= f.text_field :from_nic %>
+      <b>NIC </b> <%= f.number_field :from_nic, in: 1..16 %>
     </div>
     <div class="field">
       <%= f.label :to_nic %>
@@ -34,7 +34,7 @@
     <div class="field">
       <%= f.label :color %>
       <br/>
-      <%= f.text_field :color %>
+      <%= f.select :color, ["Yellow", "Red", "Blue"] %>
     </div>
     <div class="actions">
       <%= f.submit %>

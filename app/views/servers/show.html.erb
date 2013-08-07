@@ -70,11 +70,11 @@
   <% for cable in @server.cables %>
       <tr>
         <td><%= cable.to_end %></td>
-        <td><%= cable.from_nic %></td>
+        <td>NIC <%= cable.from_nic %></td>
         <td><%= cable.to_nic %></td>
         <td><%= cable.color %></td>
-        <td><%= link_to "Edit", edit_server_cable_path(@server,cable) %></td>
-        <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_server_cable_path(@server, cable) %></td>
+        <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
 
   <% end %>

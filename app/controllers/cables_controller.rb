@@ -65,7 +65,7 @@ class CablesController < ApplicationController
 
     respond_to do |format|
       if @cable.update_attributes(params[:cable])
-        format.html { redirect_to server_cables_url(@server), notice: 'Cable was successfully updated.' }
+        format.html { redirect_to (@server), notice: 'Cable was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
