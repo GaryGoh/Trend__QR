@@ -18,7 +18,7 @@
 
 <% @servers.each do |server| %>
   <tr>
-    <td><%= server.name %></td>
+    <td><%= link_to server.name, server %></td>
     <td><%= server.QR_code %></td>
     <td><%= server.IP %></td>
     <td><%= server.IDR %></td>
