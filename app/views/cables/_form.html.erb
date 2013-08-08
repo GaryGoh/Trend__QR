@@ -1,0 +1,55 @@
+<%= form_for([@server, @cable]) do |f| %>
+    <% if @cable.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@cable.errors.count, "error") %> prohibited this cable from being saved:</h2>
+
+          <ul>
+            <% @cable.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <!--<div class="field">-->
+    <!--<%= f.label :server_id %>-->
+    <!--<br/>-->
+    <!--<%= f.select :server_id, Server.find(:all, :order => "name").collect { |server| [server.name, server.id] } %>-->
+    <!--</div>-->
+
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="to_end">To which</label>
+
+        <div class="controls">
+          <%= f.text_field :to_end, id: "to_end" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="from_nic">From which NIC</label>
+
+        <div class="controls">
+          <b>NIC </b> <%= f.number_field :from_nic, in: 1..16, id: "from_nic" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="to_nic">To which NIC</label>
+
+        <div class="controls">
+          <%= f.text_field :to_nic, id: "to_nic", placeholder: "To Nic or switch's port" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="color">Cable's color</label>
+
+        <div class="controls">
+          <%= f.select :color, ["Yellow", "Red", "Blue"], id: "color" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="actions">
+          <%= f.submit class: "btn" %>
+        </div>
+      </div>
+    </form>
+<% end %>
