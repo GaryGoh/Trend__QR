@@ -9,7 +9,8 @@ class Server < ActiveRecord::Base
 
   def self.search(search)
     if search
-      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])|
+          where("QR_code = ?", search)
     else
       find(:all)
     end
@@ -47,10 +48,11 @@ class Server < ActiveRecord::Base
   @@qr
   #To generate QR_Code
   def self.qr
-    @@qr = SecureRandom.hex 4
+    @@qr = (SecureRandom.hex 4).to_s
   end
 
 ## upload image ##
+##  begin  ##
 # writing image data to filesystem, after the image has been written to database
   after_save :store_image
 
@@ -69,10 +71,7 @@ class Server < ActiveRecord::Base
 # To assign image data and store the extension like .jpg, .png
   def image=(file_data)
     unless file_data.blank?
-# store the uploaded data into a private instance variable
       @file_data = file_data
-# figure out the last part of the filename and use this as
-# the file extension. e.g., from "me.jpg" will return "jpg"
       self.extension = file_data.original_filename.split('.').last.downcase
     end
   end
@@ -95,3 +94,4 @@ class Server < ActiveRecord::Base
     File.exists? image_filename
   end
 end
+##  end  ##
