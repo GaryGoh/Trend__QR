@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_variables.scss" afterPath="$PROJECT_DIR$/sass/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/index.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/new.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/show.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" name="Default" comment="" />
     <ignored path="TrendQR.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375950293974" ignored="false" />
