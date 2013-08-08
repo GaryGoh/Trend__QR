@@ -1,32 +1,32 @@
-<h1>Listing cables</h1>
+<!--<h1>Listing cables</h1>-->
 
-<table>
-  <tr>
-    <th>Server</th>
-    <th>To end</th>
-    <th>From nic</th>
-    <th>To nic</th>
-    <th>Color</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<!--<table>-->
+  <!--<tr>-->
+    <!--<th>Server</th>-->
+    <!--<th>To end</th>-->
+    <!--<th>From nic</th>-->
+    <!--<th>To nic</th>-->
+    <!--<th>Color</th>-->
+    <!--<th></th>-->
+    <!--<th></th>-->
+    <!--<th></th>-->
+  <!--</tr>-->
 
-<% @cables.each do |cable| %>
-  <tr>
-    <td><%= cable.server ? cable.server.name : '' %></td>
-    <td><%= cable.to_end %></td>
-    <td><%= cable.from_nic %></td>
-    <td><%= cable.to_nic %></td>
-    <td><%= cable.color %></td>
-    <td><%= link_to 'Show', [@server, cable] %></td>
-    <td><%= link_to 'Edit', edit_server_cable_path(@server,cable) %></td>
-    <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+<!--<% @cables.each do |cable| %>-->
+  <!--<tr>-->
+    <!--<td><%= cable.server ? cable.server.name : '' %></td>-->
+    <!--<td><%= cable.to_end %></td>-->
+    <!--<td><%= cable.from_nic %></td>-->
+    <!--<td><%= cable.to_nic %></td>-->
+    <!--<td><%= cable.color %></td>-->
+    <!--<td><%= link_to 'Show', [@server, cable] %></td>-->
+    <!--<td><%= link_to 'Edit', edit_server_cable_path(@server,cable) %></td>-->
+    <!--<td><%= link_to 'Destroy', [@server, cable], method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+  <!--</tr>-->
+<!--<% end %>-->
+<!--</table>-->
 
-<br />
+<!--<br />-->
 
-<%= link_to 'New Cable', new_server_cable_path(@server) %>
-<%= link_to 'Back', @server %>
+<!--<%= link_to 'New Cable', new_server_cable_path(@server) %>-->
+<!--<%= link_to 'Back', @server %>-->
