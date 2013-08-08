@@ -1,0 +1,4 @@
+##
+## To ignore Gemfile.lock in case of that merging causes some problem
+##
+Gemfile.lock

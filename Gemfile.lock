@@ -109,10 +109,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-=======
   bootstrap-sass (~> 2.3.2.1)
->>>>>>> cables
   coffee-rails (~> 3.2.1)
   goqr
   jquery-rails
