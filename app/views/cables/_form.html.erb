@@ -12,31 +12,44 @@
     <% end %>
 
     <!--<div class="field">-->
-      <!--<%= f.label :server_id %>-->
-      <!--<br/>-->
-      <!--<%= f.select :server_id, Server.find(:all, :order => "name").collect { |server| [server.name, server.id] } %>-->
+    <!--<%= f.label :server_id %>-->
+    <!--<br/>-->
+    <!--<%= f.select :server_id, Server.find(:all, :order => "name").collect { |server| [server.name, server.id] } %>-->
     <!--</div>-->
-    <div class="field">
-      <%= f.label :to_end %>
-      <br/>
-      <%= f.text_field :to_end %>
-    </div>
-    <div class="field">
-      <%= f.label :from_nic %>
-      <br/>
-      <b>NIC </b> <%= f.number_field :from_nic, in: 1..16 %>
-    </div>
-    <div class="field">
-      <%= f.label :to_nic %>
-      <br/>
-      <%= f.text_field :to_nic %>
-    </div>
-    <div class="field">
-      <%= f.label :color %>
-      <br/>
-      <%= f.select :color, ["Yellow", "Red", "Blue"] %>
-    </div>
-    <div class="actions">
-      <%= f.submit %>
-    </div>
+
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="to_end">To which</label>
+
+        <div class="controls">
+          <%= f.text_field :to_end, id: "to_end" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="from_nic">From which NIC</label>
+
+        <div class="controls">
+          <b>NIC </b> <%= f.number_field :from_nic, in: 1..16, id: "from_nic" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="to_nic">To which NIC</label>
+
+        <div class="controls">
+          <%= f.text_field :to_nic, id: "to_nic", placeholder: "To Nic or switch's port" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="color">Cable's color</label>
+
+        <div class="controls">
+          <%= f.select :color, ["Yellow", "Red", "Blue"], id: "color" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="actions">
+          <%= f.submit class: "btn" %>
+        </div>
+      </div>
+    </form>
 <% end %>
