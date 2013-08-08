@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" name="Default" comment="" />
+    <list default="true" id="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/server.rb" afterPath="$PROJECT_DIR$/app/models/server.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="TrendQR.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375979013870" ignored="false" />
-    <file path="/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375973083542" ignored="false" />
+    <file path="/Dummy.txt" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375995576283" ignored="false" />
+    <file path="/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375997611588" ignored="false" />
     <file path="$USER_HOME$/guestbook/db/schema.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375777636519" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375806261384" ignored="false" />
     <file path="/_form.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375957964298" ignored="false" />
@@ -28,7 +33,7 @@
     <file path="$USER_HOME$/students/app/views/awards/new.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375806144049" ignored="false" />
     <file path="/new.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375957983550" ignored="false" />
     <file path="/award.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375820127873" ignored="false" />
-    <file path="/server.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375975166979" ignored="false" />
+    <file path="/server.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375998742595" ignored="false" />
     <file path="/cables_controller.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375832725603" ignored="false" />
     <file path="/servers_controller.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375974326033" ignored="false" />
     <file path="/application.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375885626474" ignored="false" />
@@ -78,7 +83,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.0">
+            <state line="26" column="38" selection-start="574" selection-end="574" vertical-scroll-proportion="1.0416666">
               <folding />
             </state>
           </provider>
@@ -96,7 +101,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
+            <state line="41" column="0" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-25.625">
               <folding />
             </state>
           </provider>
@@ -123,7 +128,7 @@
       <file leaf-file-name="server.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/server.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="45" selection-start="413" selection-end="413" vertical-scroll-proportion="0.022692889">
+            <state line="14" column="16" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32178217">
               <folding />
             </state>
           </provider>
@@ -176,10 +181,10 @@
         <option value="$PROJECT_DIR$/app/views/cables/_form.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/servers/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.erb" />
         <option value="$PROJECT_DIR$/app/views/servers/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/servers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/servers/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/server.rb" />
       </list>
     </option>
@@ -215,7 +220,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -434,6 +438,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,14 +712,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.267423" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27228525" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -844,23 +849,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="61" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -886,9 +877,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-25.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="38" selection-start="574" selection-end="574" vertical-scroll-proportion="1.0416666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/server.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="413" selection-end="413" vertical-scroll-proportion="0.022692889">
+        <state line="14" column="16" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32178217">
           <folding />
         </state>
       </provider>
