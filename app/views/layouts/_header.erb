@@ -2,12 +2,15 @@
   <div class="navbar-inner">
     <div class="container">
       <nav>
-      <ul class="nav pull-left">
-        <%= link_to "TMQR", servers_url, id: "logo" %>
-        <form class="navbar-search pull-left" id="search">
-          <input type="text" class="search-query" placeholder="Search">
-        </form>
-      </ul>
+        <ul class="nav pull-left">
+          <%= link_to "TMQR", servers_url, id: "logo" %>
+            <%= form_tag servers_path, :method => 'get', class: "navbar-search pull-left", id: "search" do %>
+                <!--<p>-->
+                <%= text_field_tag :search, params[:search], class: "search-query", placeholder: "Search" %>
+                <%= submit_tag "Search", class: "btn btn-mini", :name => nil %>
+                <!--</p>-->
+            <% end %>
+        </ul>
 
         <ul class="nav pull-right">
           <li><%= link_to "Home", servers_url %></li>

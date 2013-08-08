@@ -1,10 +1,24 @@
 class Server < ActiveRecord::Base
-  attr_accessible :CPU, :IDR, :IP, :MAC, :QR_code, :RAM, :Storage, :name, :image
-  #attr_accessor :image
-
+  attr_accessible :CPU, :IDR, :IP, :MAC, :QR_code, :RAM, :Storage, :name, :image, :search
   has_many :cables, :dependent => :destroy
 
+
+  ############################################
+  # To give a simple search function
+  ############################################
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
+
+  ############################################################################
   # To constrain the data
+  ############################################################################
 
   # Server name
   validates_presence_of :name, :message => "Must be provided a server name"

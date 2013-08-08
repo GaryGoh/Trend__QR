@@ -2,8 +2,9 @@ class ServersController < ApplicationController
   # GET /servers
   # GET /servers.json
   def index
-    @servers = Server.all
+    @servers = Server.search (params[:search])
 
+    #@servers = Server.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @servers }
