@@ -2,3 +2,15 @@
 ## To ignore Gemfile.lock in case of that merging causes some problem
 ##
 Gemfile.lock
+
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore other unneeded files.
+*.swp
+*~
+.project
+.DS_Store
+.idea
