@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/signin.css.scss" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/signin/signin.html.erb" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/signin.js.coffee" />
@@ -23,6 +24,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/omniauth.rb" afterPath="$PROJECT_DIR$/config/initializers/omniauth.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/signin_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/signin_controller.rb" />
+>>>>>>> sign_in
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrendQR.iws" />
@@ -103,19 +111,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="development.sqlite3" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/development.sqlite3">
+=======
+      <file leaf-file-name="omniauth.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
+>>>>>>> sign_in
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="101" selection-start="170" selection-end="170" vertical-scroll-proportion="0.044510387">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="omniauth.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
+      <file leaf-file-name="servers.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="2" column="101" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+=======
+            <state line="55" column="19" selection-start="838" selection-end="838" vertical-scroll-proportion="-18.461538">
+>>>>>>> sign_in
               <folding />
             </state>
           </provider>
@@ -939,114 +956,198 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/cables/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.583333">
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="31" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/cables/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.583333">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="31" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/cables.css.scss">
+=======
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+>>>>>>> sign_in
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/cables.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="19" selection-start="838" selection-end="838" vertical-scroll-proportion="-18.461538">
+=======
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/signin.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="19" selection-start="838" selection-end="838" vertical-scroll-proportion="-18.461538">
+>>>>>>> sign_in
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/models/identity.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/signin.css.scss">
+>>>>>>> sign_in
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="12" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/identity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/models/identity.rb">
+>>>>>>> sign_in
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+>>>>>>> sign_in
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+>>>>>>> sign_in
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/signin/signin.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="12" selection-start="434" selection-end="434" vertical-scroll-proportion="-4.375">
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/signin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="5" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/signin/signin.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="434" selection-end="434" vertical-scroll-proportion="-4.375">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="1" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/signin_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="101" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="1" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
+>>>>>>> sign_in
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/db/development.sqlite3">
+=======
+    <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
+>>>>>>> sign_in
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="101" selection-start="170" selection-end="170" vertical-scroll-proportion="0.044510387">
           <folding />
         </state>
       </provider>
