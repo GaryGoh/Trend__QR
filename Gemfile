@@ -9,7 +9,9 @@ gem 'sqlite3'
 gem 'goqr'
 
 
-
+# To install omniatuh authentication middleware
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'omniauth-identity'
 
 # Gems used only for assets and not required
 # in production environments by default.
