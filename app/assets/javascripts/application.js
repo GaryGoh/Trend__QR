@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-dropdown
+//= require bootstrap-tab
+
+//= require jquery-1.8.1.min.js
 
 
 //= require_tree .

@@ -1,20 +1,37 @@
+<div class="tabbable tabs-left"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs" id="QRTab">
+    <li class="active"><a href="#server" data-toggle="tab">Server</a></li>
+    <li><a href="#switch" data-toggle="tab">Switch</a></li>
+    <li><a href="#storage" data-toggle="tab">Storage</a></li>
+  </ul>
 
-<% if notice != nil %>
-    <div class="alert alert-success" id="index_alert">
-      <%= notice %>
+  <div class="tab-content">
+    <div class="tab-pane active" id="server">
+      <div class="span12">
+        <% if notice != nil %>
+          <div class="alert alert-success" id="index_alert">
+            <%= notice %>
+          </div>
+          <script type="text/javascript">
+              $('#index_alert').fadeOut(3000)
+          </script>
+      <% end %>
+      <% if current_user %>
+          <%= render 'servers/admin_index' %>
+      <% else %>
+          <%= render 'servers/public_index' %>
+      <% end %>
+      </div>
     </div>
-    <script type="text/javascript">
-        $('#index_alert').fadeOut(3000)
-    </script>
-<% end %>
 
-<% if current_user %>
-    <%= render 'servers/admin_index' %>
-<% else %>
-    <%= render 'servers/public_index' %>
-<% end %>
+    <div class="tab-pane" id="switch">
+      <p>Howdy, I'm in Section 2.</p>
+    </div>
 
+    <div class="tab-pane" id="storage">
+      <p>Howdy, I'm in Section 2.</p>
+    </div>
 
-
-
+  </div>
+</div>
 
