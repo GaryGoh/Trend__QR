@@ -14,4 +14,10 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to servers_url, :notice => "Log out successfully!"
   end
+
+  def failure
+    redirect_to sign_sign_url, alert: "Authentication failed, please try again."
+  end
 end
+
+
