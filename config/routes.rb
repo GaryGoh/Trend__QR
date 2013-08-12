@@ -1,5 +1,7 @@
 TrendQr::Application.routes.draw do
 
+  get "signin/signin"
+
   resources :users
 
 
@@ -70,4 +72,5 @@ TrendQr::Application.routes.draw do
 
   # To match sign out path
   match "/signout" => "sessions#destroy", :as => :signout
+
 end
