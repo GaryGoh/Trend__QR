@@ -1,3 +1,13 @@
+
+<% if notice != nil %>
+    <div class="alert alert-success" id="index_alert">
+      <%= notice %>
+    </div>
+    <script type="text/javascript">
+        $('#index_alert').fadeOut(2500)
+    </script>
+<% end %>
+
 <% if current_user %>
     <%= render 'servers/admin_index' %>
 <% else %>
@@ -7,4 +17,6 @@
 <br/>
 
 <%= button_to 'New Server', new_server_path, :class => 'btn btn-success' %>
+
+
 

@@ -11,9 +11,9 @@
 
 <table class="table table-hover">
   <tr>
-    <th> To_end</th>
+    <th> To_Device</th>
     <th> From_NIC</th>
-    <th> To_NIC</th>
+    <th> To_Port</th>
     <th> Color</th>
     <th></th>
     <th></th>
@@ -23,7 +23,13 @@
         <td><%= cable.to_end %></td>
         <td>NIC <%= cable.from_nic %></td>
         <td><%= cable.to_nic %></td>
-        <td><%= cable.color %></td>
+        <% if cable.color == 'Yellow' %>
+            <td><li class="label label-warning"><%= cable.color %></li></td>
+        <% elsif cable.color == 'Blue' %>
+            <td><li class="label label-info"><%= cable.color %></li></td>
+        <% elsif cable.color == 'Red' %>
+            <td><li class="label label-important"><%= cable.color %></li></td>
+        <% end %>
         <td><%= link_to 'Edit', edit_server_cable_path(@server, cable) %></td>
         <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>

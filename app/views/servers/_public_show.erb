@@ -10,9 +10,9 @@
 
 <table class="table table-hover">
   <tr>
-    <th> To_end</th>
+    <th> To_Device</th>
     <th> From_NIC</th>
-    <th> To_NIC</th>
+    <th> To_Port</th>
     <th> Color</th>
   </tr>
   <% for cable in @server.cables %>
@@ -20,7 +20,13 @@
         <td><%= cable.to_end %></td>
         <td>NIC <%= cable.from_nic %></td>
         <td><%= cable.to_nic %></td>
-        <td><%= cable.color %></td>
+        <% if cable.color == 'Yellow' %>
+            <td><span class="label label-warning"><%= cable.color %></span></td>
+        <% elsif cable.color == 'Blue' %>
+            <td><span class="label label-info"><%= cable.color %></span></td>
+        <% elsif cable.color == 'Red' %>
+            <td><span class="label label-important"><%= cable.color %></span></td>
+        <% end %>
       </tr>
 
   <% end %>
