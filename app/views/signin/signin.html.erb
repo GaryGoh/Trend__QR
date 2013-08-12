@@ -1,9 +1,15 @@
+<% if notice != nil %>
+    <div class="alert alert-success" id="index_alert">
+      <%= notice %>
+    </div>
+<% end %>
+
 <div class="container">
 
   <%= form_tag "/auth/identity/callback", class: "form-signin" do %>
       <h2 class="form-signin-heading">Please sign in</h2>
-      <%= text_field_tag :auth_key,nil, class: "input-block-level", placeholder: "admin" %>
-      <%= password_field_tag :password,nil, class: "input-block-level", placeholder: "password"  %>
+      <%= text_field_tag :auth_key, nil, class: "input-block-level", placeholder: "admin" %>
+      <%= password_field_tag :password, nil, class: "input-block-level", placeholder: "password" %>
       <button class="btn btn-large btn-primary" type="submit">Sign in</button>
   <% end %>
 
