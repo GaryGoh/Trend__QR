@@ -1,0 +1,39 @@
+<h5><%= link_to 'Edit', edit_server_path(@server) %> |
+  <%= link_to 'Add Cable', new_server_cable_path(@server) %>  |
+  <%= link_to 'Back', servers_path %>
+</h5>
+</br>
+</br>
+
+<!--show the connnected cables-->
+
+<h2 class="text-info">Cables in <%= @server.name %></h2>
+
+<table class="table table-hover">
+  <tr>
+    <th> To_end</th>
+    <th> From_NIC</th>
+    <th> To_NIC</th>
+    <th> Color</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% for cable in @server.cables %>
+      <tr>
+        <td><%= cable.to_end %></td>
+        <td>NIC <%= cable.from_nic %></td>
+        <td><%= cable.to_nic %></td>
+        <td><%= cable.color %></td>
+        <td><%= link_to 'Edit', edit_server_cable_path(@server, cable) %></td>
+        <td><%= link_to 'Destroy', [@server, cable], method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+
+  <% end %>
+</table>
+
+
+
+
+
+
+

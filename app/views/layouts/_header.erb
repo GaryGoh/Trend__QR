@@ -4,18 +4,35 @@
       <nav>
         <ul class="nav pull-left">
           <%= link_to "TMQR", servers_url, id: "logo" %>
-            <%= form_tag servers_path, :method => 'get', class: "navbar-search pull-left", id: "search" do %>
-                <!--<p>-->
-                <%= text_field_tag :search, params[:search], class: "search-query", placeholder: "Search" %>
-                <%= submit_tag "Search", class: "btn btn-mini", :name => nil %>
-                <!--</p>-->
-            <% end %>
+          <%= form_tag servers_path, :method => 'get', class: "navbar-search pull-left", id: "search" do %>
+              <!--<p>-->
+              <%= text_field_tag :search, params[:search], class: "search-query", placeholder: "Search" %>
+              <%= submit_tag "Search", class: "btn btn-mini", :name => nil %>
+              <!--</p>-->
+          <% end %>
         </ul>
 
         <ul class="nav pull-right">
           <li><%= link_to "Home", servers_url %></li>
           <li><%= link_to "FAQ", '#' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+          <% if current_user %>
+              <ul class="nav nav-pills">
+                <li class="dropdown">
+                  <a class="dropdown-toggle"
+                     data-toggle="dropdown"
+                     href="#">
+                    <%= current_user.name %>
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to current_user.name, "#" %></li>
+                    <li><%= link_to 'Sign out', signout_path %></li>
+                  </ul>
+                </li>
+              </ul>
+          <% else %>
+              <li><%= link_to "Sign in", "/auth/identity" %></li>
+          <% end %>
         </ul>
         <div class="nav-collapse collapse">
 

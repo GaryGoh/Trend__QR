@@ -1,0 +1,36 @@
+<h1>Root mode</h1>
+
+<table CLASS="table table-bordered">
+  <tr>
+    <th> Server_Name</th>
+    <th> QR_code</th>
+    <th> IP</th>
+    <th> IDR</th>
+    <th> CPU</th>
+    <th> RAM</th>
+    <th> Storage</th>
+    <th> MAC</th>
+    <th> Number of Cables</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+  <% @servers.each do |server| %>
+      <tr>
+        <td><%= link_to server.name, server %></td>
+        <td><%= server.QR_code %></td>
+        <td><%= server.IP %></td>
+        <td><%= server.IDR %></td>
+        <td><%= server.CPU %></td>
+        <td><%= server.RAM %></td>
+        <td><%= server.Storage %></td>
+        <td><%= server.MAC %></td>
+        <td><%= server.cables.count %></td>
+        <td><%= link_to 'Show', server %></td>
+        <td><%= link_to 'Edit', edit_server_path(server) %></td>
+        <td><%= link_to 'Destroy', server, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+</table>

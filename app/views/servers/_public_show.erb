@@ -1,0 +1,34 @@
+<h5>
+  <%= link_to 'Back', servers_path %>
+</h5>
+</br>
+</br>
+
+<!--show the connnected cables-->
+
+<h2 class="text-info">Cables in <%= @server.name %></h2>
+
+<table class="table table-hover">
+  <tr>
+    <th> To_end</th>
+    <th> From_NIC</th>
+    <th> To_NIC</th>
+    <th> Color</th>
+  </tr>
+  <% for cable in @server.cables %>
+      <tr>
+        <td><%= cable.to_end %></td>
+        <td>NIC <%= cable.from_nic %></td>
+        <td><%= cable.to_nic %></td>
+        <td><%= cable.color %></td>
+      </tr>
+
+  <% end %>
+</table>
+
+
+
+
+
+
+

@@ -1,9 +1,9 @@
 class ServersController < ApplicationController
   # GET /servers
   # GET /servers.json
+
   def index
     @servers = Server.search (params[:search])
-
     #@servers = Server.all
     respond_to do |format|
       format.html # index.html.erb
@@ -11,8 +11,8 @@ class ServersController < ApplicationController
     end
   end
 
-  # GET /servers/1
-  # GET /servers/1.json
+# GET /servers/1
+# GET /servers/1.json
   def show
     @server = Server.find(params[:id])
 
@@ -22,8 +22,8 @@ class ServersController < ApplicationController
     end
   end
 
-  # GET /servers/new
-  # GET /servers/new.json
+# GET /servers/new
+# GET /servers/new.json
   def new
     @server = Server.new
     respond_to do |format|
@@ -32,13 +32,13 @@ class ServersController < ApplicationController
     end
   end
 
-  # GET /servers/1/edit
+# GET /servers/1/edit
   def edit
     @server = Server.find(params[:id])
   end
 
-  # POST /servers
-  # POST /servers.json
+# POST /servers
+# POST /servers.json
   def create
     #@server.QR_code = Server.qr
     @server = Server.new(params[:server])
@@ -55,8 +55,8 @@ class ServersController < ApplicationController
     end
   end
 
-  # PUT /servers/1
-  # PUT /servers/1.json
+# PUT /servers/1
+# PUT /servers/1.json
   def update
     @server = Server.find(params[:id])
 
@@ -71,8 +71,8 @@ class ServersController < ApplicationController
     end
   end
 
-  # DELETE /servers/1
-  # DELETE /servers/1.json
+# DELETE /servers/1
+# DELETE /servers/1.json
   def destroy
     @server = Server.find(params[:id])
     @server.destroy
