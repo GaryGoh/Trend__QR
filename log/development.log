@@ -58234,3 +58234,231 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-12 12:15:54 +0100
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/servers" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Connecting to database specified by database.yml
+Processing by ServersController#index as HTML
+  [1m[36mServer Load (0.1ms)[0m  [1mSELECT "servers".* FROM "servers" [0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 46[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 47
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 48[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 49
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 50[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 51
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 52[0m
+  Rendered servers/_admin_index.erb (20.5ms)
+  Rendered servers/index.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_header.erb (1.5ms)
+  Rendered layouts/_footer.erb (0.5ms)
+Completed 200 OK in 156ms (Views: 115.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/servers.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /servers.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/cables.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /cables.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cables.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /cables.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/servers.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /servers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-12 12:34:58 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/servers" for 127.0.0.1 at 2013-08-12 12:34:59 +0100
+Processing by ServersController#index as HTML
+  [1m[35mServer Load (0.2ms)[0m  SELECT "servers".* FROM "servers" 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 46
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 47[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 48
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 49[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 50
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 51[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 52
+  Rendered servers/_admin_index.erb (14.9ms)
+  Rendered servers/index.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_header.erb (0.9ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:59 +0100
+Served asset /scaffolds.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/cables.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:59 +0100
+Served asset /cables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/servers.css?body=1" for 127.0.0.1 at 2013-08-12 12:34:59 +0100
+Served asset /servers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cables.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /cables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/servers.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /servers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:00 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/servers
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/servers" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Processing by ServersController#index as HTML
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT "servers".* FROM "servers" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 46
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 47[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 48
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 49[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 50
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 51[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 52
+  Rendered servers/_public_index.erb (8.4ms)
+  Rendered servers/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.erb (0.7ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/cables.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /cables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/servers.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /servers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cables.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /cables.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/servers.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /servers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-12 12:35:02 +0100
+Served asset /application.js - 304 Not Modified (0ms)
