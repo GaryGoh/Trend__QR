@@ -9,12 +9,7 @@ class Server < ActiveRecord::Base
 
   def self.search(search)
     if search
-<<<<<<< HEAD
-      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])|
-          where("QR_code = ?", search)
-=======
       find(:all, :conditions => ['name LIKE ?', "%#{search}%"])| where("QR_code = ?", search)
->>>>>>> sign_in
     else
       find(:all)
     end
