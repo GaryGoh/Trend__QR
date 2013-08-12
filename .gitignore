@@ -14,3 +14,7 @@ Gemfile.lock
 .project
 .DS_Store
 .idea
+
+.idea/workspace.xml
+log/development.log
+mp/pids/server.pid

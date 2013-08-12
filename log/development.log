@@ -67633,3 +67633,283 @@ ActionView::Template::Error (Could not find table 'users'):
   Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
   Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
   Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/servers" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Connecting to database specified by database.yml
+Processing by ServersController#index as HTML
+  [1m[36mServer Load (0.1ms)[0m  [1mSELECT "servers".* FROM "servers" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 46
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 47[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 48
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 49[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 50
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 51[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 52
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 53[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 54
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 55[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cables" WHERE "cables"."server_id" = 56
+  Rendered servers/_public_index.erb (21.8ms)
+  Rendered servers/index.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_header.erb (1.4ms)
+  Rendered layouts/_footer.erb (0.4ms)
+Completed 200 OK in 146ms (Views: 105.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/servers.css?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /servers.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cables.css?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /cables.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /users.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cables.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /cables.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/servers.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /servers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-12 12:18:05 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/auth/identity" for 127.0.0.1 at 2013-08-12 12:18:11 +0100
+
+
+Started POST "/auth/identity/callback" for 127.0.0.1 at 2013-08-12 12:18:15 +0100
+
+ActiveRecord::StatementInvalid (Could not find table 'identities'):
+  activerecord (3.2.12) lib/active_record/connection_adapters/sqlite_adapter.rb:472:in `table_structure'
+  activerecord (3.2.12) lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `columns'
+  activerecord (3.2.12) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:237:in `columns_hash'
+  activerecord (3.2.12) lib/active_record/locking/optimistic.rb:129:in `locking_enabled?'
+  activerecord (3.2.12) lib/active_record/relation.rb:170:in `exec_queries'
+  activerecord (3.2.12) lib/active_record/relation.rb:160:in `block in to_a'
+  activerecord (3.2.12) lib/active_record/explain.rb:33:in `logging_query_plan'
+  activerecord (3.2.12) lib/active_record/relation.rb:159:in `to_a'
+  activerecord (3.2.12) lib/active_record/relation/finder_methods.rb:378:in `find_first'
+  activerecord (3.2.12) lib/active_record/relation/finder_methods.rb:122:in `first'
+  omniauth-identity (1.1.1) lib/omniauth/identity/models/active_record.rb:19:in `locate'
+  omniauth-identity (1.1.1) lib/omniauth/identity/model.rb:29:in `authenticate'
+  omniauth-identity (1.1.1) lib/omniauth/strategies/identity.rb:95:in `identity'
+  omniauth-identity (1.1.1) lib/omniauth/strategies/identity.rb:31:in `callback_phase'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:226:in `callback_call'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:182:in `call!'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__3309636195525485953__call__3708849721158571593__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/auth/identity/register" for 127.0.0.1 at 2013-08-12 12:18:22 +0100
+
+
+Started POST "/auth/identity/register" for 127.0.0.1 at 2013-08-12 12:18:35 +0100
+
+ActiveRecord::StatementInvalid (Could not find table 'identities'):
+  activerecord (3.2.12) lib/active_record/connection_adapters/sqlite_adapter.rb:472:in `table_structure'
+  activerecord (3.2.12) lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `columns'
+  activerecord (3.2.12) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:243:in `column_defaults'
+  activerecord (3.2.12) lib/active_record/base.rb:482:in `initialize'
+  activerecord (3.2.12) lib/active_record/persistence.rb:44:in `new'
+  activerecord (3.2.12) lib/active_record/persistence.rb:44:in `create'
+  omniauth-identity (1.1.1) lib/omniauth/strategies/identity.rb:63:in `registration_phase'
+  omniauth-identity (1.1.1) lib/omniauth/strategies/identity.rb:40:in `other_phase'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__3309636195525485953__call__3708849721158571593__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started POST "/auth/identity/register" for 127.0.0.1 at 2013-08-12 12:18:48 +0100
+
+ActiveRecord::StatementInvalid (Could not find table 'identities'):
+  activerecord (3.2.12) lib/active_record/connection_adapters/sqlite_adapter.rb:472:in `table_structure'
+  activerecord (3.2.12) lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `columns'
+  activerecord (3.2.12) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.12) lib/active_record/model_schema.rb:243:in `column_defaults'
+  activerecord (3.2.12) lib/active_record/base.rb:482:in `initialize'
+  activerecord (3.2.12) lib/active_record/persistence.rb:44:in `new'
+  activerecord (3.2.12) lib/active_record/persistence.rb:44:in `create'
+  omniauth-identity (1.1.1) lib/omniauth/strategies/identity.rb:63:in `registration_phase'
+  omniauth-identity (1.1.1) lib/omniauth/strategies/identity.rb:40:in `other_phase'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__3309636195525485953__call__3708849721158571593__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/GaryGoh/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/GaryGoh/.rvm/gems/ruby-2.0.0-p195@rails-3.2.12/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
