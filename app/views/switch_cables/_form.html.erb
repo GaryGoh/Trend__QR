@@ -1,0 +1,99 @@
+<%= form_for([@switch, @switch_cable]) do |f| %>
+    <% if @switch_cable.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@switch_cable.errors.count, "error") %> prohibited this cable from being saved:</h2>
+
+          <ul>
+            <% @switch_cable.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+    <%= f.label :switch_id %>
+    <br/>
+    <%= f.select :switch_id, Switch.find(:all, :order => "switch_name").collect { |switch| [switch.switch_name, switch.id] } %>
+    </div>
+
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="from_device">From which device</label>
+
+        <div class="controls">
+          <%= f.text_field :from_device, id: "from_device" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="to_device">To which device</label>
+
+        <div class="controls">
+          <%= f.text_field :to_device, id: "to_device" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="from_port">From which port</label>
+
+        <div class="controls">
+          <%= f.number_field :from_port, in: 0..64, id: "from_port" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="to_port">To which port</label>
+
+        <div class="controls">
+          <%= f.text_field :to_port, id: "to_port" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="vlan">Vlan</label>
+
+        <div class="controls">
+          <%= f.number_field :vlan, in: 0..255, id: "vlan" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="mode">Port mode</label>
+
+        <div class="controls">
+          <%= f.select :mode, ["Vlan", "Trunk", "Native"], id: "mode" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="type">Type of cable</label>
+
+        <div class="controls">
+          <%= f.select :cable_type, ["1G", "10G"], id: "type" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="protocal">Protocal</label>
+
+        <div class="controls">
+          <%= f.text_field :protocal, id: "protocal" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="color">Cable's color</label>
+
+        <div class="controls">
+          <%= f.select :color, ["Yellow", "Red", "Blue"], id: "color" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="actions">
+          <%= f.submit class: "btn" %>
+        </div>
+      </div>
+    </form>
+<% end %>

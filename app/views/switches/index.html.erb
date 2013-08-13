@@ -1,0 +1,35 @@
+<h1>Listing switches</h1>
+
+<table>
+  <tr>
+    <th>Switch name</th>
+    <th>Num ports</th>
+    <th>Rack</th>
+    <th>Admin ip</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @switches.each do |switch| %>
+      <tr>
+        <td><%= switch.switch_name %></td>
+        <td><%= switch.num_ports %></td>
+        <td><%= switch.rack %></td>
+        <td><%= switch.admin_ip %></td>
+        <td><%= switch.switch_cables.count %></td>
+        <td><%= link_to 'Show', switch %></td>
+        <td><%= link_to 'Edit', edit_switch_path(switch) %></td>
+        <td><%= link_to 'Destroy', switch, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'New Switch', new_switch_path %>
+
+
+
+

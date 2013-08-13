@@ -1,0 +1,42 @@
+<h1>Listing switch_cables</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Vlan</th>
+    <th>Mode</th>
+    <th>From device</th>
+    <th>To device</th>
+    <th>From port</th>
+    <th>To port</th>
+    <th>Protocal</th>
+    <th>Color</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @switch_cables.each do |switch_cable| %>
+      <tr>
+        <td><%= switch_cable.cable_type %></td>
+        <td><%= switch_cable.vlan %></td>
+        <td><%= switch_cable.mode %></td>
+        <td><%= switch_cable.from_device %></td>
+        <td><%= switch_cable.to_device %></td>
+        <td><%= switch_cable.from_port %></td>
+        <td><%= switch_cable.to_port %></td>
+        <td><%= switch_cable.protocal %></td>
+        <td><%= switch_cable.color %></td>
+        <td><%= link_to 'Show', [@switch, switch_cable] %></td>
+        <td><%= link_to 'Edit', edit_switch_switch_cable_path(@switch, switch_cable) %></td>
+        <td><%= link_to 'Destroy', [@switch, switch_cable], method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'New Switch cable', new_switch_switch_cable_path %>
+
+
+

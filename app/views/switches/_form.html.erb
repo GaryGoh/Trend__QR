@@ -1,0 +1,56 @@
+<%= form_for(@switch, :html => {:multipart => true}) do |f| %>
+    <% if @switch.errors.any? %>
+        <div id="error_explanation" xmlns="http://www.w3.org/1999/html">
+          <h2><%= pluralize(@switch.errors.count, "error") %> prohibited this server from being saved:</h2>
+
+          <ul>
+            <% @switch.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <form class="form-horizontal">
+
+      <div class="control-group">
+        <label class="control-label" for="switch_name">Switch Name</label>
+
+        <div class="controls">
+          <%= f.text_field :switch_name, id: "switch_name", placeholder: "switch name" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="admin_ip">Admin_IP Address</label>
+
+        <div class="controls">
+          <%= f.text_field :admin_ip, id: "admin_ip", placeholder: "Admin_IP address" %>
+        </div>
+      </div>
+
+
+      <div class="control-group">
+        <label class="control-label" for="num_ports">Number of ports</label>
+
+        <div class="controls">
+          <%= f.number_field :num_ports, id: "num_ports", in: 0..64, placeholder: "num_ports" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="rack">In which rack</label>
+
+        <div class="controls">
+          <%= f.number_field :rack, id: "rack", in: 1..4, placeholder: "Rack" %>
+        </div>
+      </div>
+
+
+      <!--<div class="actions">-->
+      <%= f.submit class: 'btn' %>
+      <!--</div>-->
+    </form>
+
+
+<% end %>

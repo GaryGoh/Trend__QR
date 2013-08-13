@@ -1,0 +1,46 @@
+<div class="container">
+  <table class="table">
+    <% if notice != nil %>
+        <div class="alert alert-success">
+          <%= notice %>
+        </div>
+    <% end %>
+
+    <tr>
+      <td><b>Switch_Name:</b></td>
+      <td> <%= @switch.switch_name %>  </td>
+    </tr>
+
+
+    <tr>
+      <td><b>Admin_IP:</b></td>
+      <td><%= @switch.admin_ip %> </td>
+    </tr>
+
+    <tr>
+      <td><b>Number of Ports:</b></td>
+      <td><%= @switch.num_ports %> </td>
+    </tr>
+
+    <tr>
+      <td><b>Rack:</b></td>
+      <td><%= @switch.rack %>  </td>
+    </tr>
+
+
+  </table>
+
+  <% if current_user %>
+      <%= render 'switches/admin_show' %>
+  <% else %>
+      <%= render 'switches/public_show' %>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+

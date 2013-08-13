@@ -2,41 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/switches/_admin_index.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/switches/_admin_show.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/switches/_public_index.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/switches/_public_show.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130806213713_create_cables.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/cables_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/cables_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/signin/signin.html.erb" afterPath="$PROJECT_DIR$/app/views/signin/signin.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cables/new.html.erb" afterPath="$PROJECT_DIR$/app/views/cables/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/servers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/servers_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrendQR.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376311366013" ignored="false" />
-    <file path="/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376327854509" ignored="false" />
+    <file path="/Dummy.txt" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376406626141" ignored="false" />
+    <file path="/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376415304538" ignored="false" />
     <file path="$USER_HOME$/guestbook/db/schema.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375777636519" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375806261384" ignored="false" />
-    <file path="/_form.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375957964298" ignored="false" />
+    <file path="/_form.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376415355283" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375804354910" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/index.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375830282965" ignored="false" />
     <file path="$USER_HOME$/students/db/schema.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376223501192" ignored="false" />
     <file path="$USER_HOME$/students/app/models/student.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375800404764" ignored="false" />
     <file path="/student.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375797704099" ignored="false" />
-    <file path="/index.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376328019604" ignored="false" />
+    <file path="/index.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376415400249" ignored="false" />
     <file path="$USER_HOME$/students/app/models/award.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375820179492" ignored="false" />
     <file path="$USER_HOME$/students/log/development.log" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375794448169" ignored="false" />
     <file path="$USER_HOME$/students/app/views/students/index.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376225164323" ignored="false" />
     <file path="$USER_HOME$/students/app/views/students/show.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375890218955" ignored="false" />
     <file path="$USER_HOME$/students/config/routes.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376225293626" ignored="false" />
-    <file path="/routes.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376322018001" ignored="false" />
+    <file path="/routes.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376412372689" ignored="false" />
     <file path="$USER_HOME$/students/app/controllers/awards_controller.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375804256288" ignored="false" />
     <file path="/awards_controller.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375804255335" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/edit.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375806013242" ignored="false" />
-    <file path="/edit.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375958008593" ignored="false" />
+    <file path="/edit.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376411102516" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/new.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375806144049" ignored="false" />
-    <file path="/new.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375957983550" ignored="false" />
+    <file path="/new.html.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376413954247" ignored="false" />
     <file path="/award.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375820127873" ignored="false" />
     <file path="/server.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376144596972" ignored="false" />
     <file path="/cables_controller.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1375832725603" ignored="false" />
@@ -69,9 +78,17 @@
     <file path="/scaffolds.css.scss" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376315920052" ignored="false" />
     <file path="/_public_show.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376318222084" ignored="false" />
     <file path="/cables.css.scss" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376317386448" ignored="false" />
-    <file path="/_admin_show.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376318206293" ignored="false" />
+    <file path="/_admin_show.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376413414725" ignored="false" />
     <file path="/servers.js.coffee" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376318433926" ignored="false" />
     <file path="/application.js" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376327560508" ignored="false" />
+    <file path="/switch_cable.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376407728533" ignored="false" />
+    <file path="/switch.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376407710854" ignored="false" />
+    <file path="/switches_controller.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376408189897" ignored="false" />
+    <file path="/switch_cables_controller.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376409083339" ignored="false" />
+    <file path="/_admin_index.erb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376412859927" ignored="false" />
+    <file path="/20130813151554_create_switch_cables.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376414807073" ignored="false" />
+    <file path="/20130813172019_rename.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376414741142" ignored="false" />
+    <file path="/20130813172929_renameswt_cable.rb" changelist="4ead146b-426e-47b6-bfbf-3bc0fe955ef5" time="1376415027131" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,55 +108,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_header.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.erb">
+      <file leaf-file-name="20130813151554_create_switch_cables.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130813151554_create_switch_cables.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="47" selection-start="640" selection-end="640" vertical-scroll-proportion="-8.75">
+            <state line="10" column="21" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <file leaf-file-name="20130813172929_renameswt_cable.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130813172929_renameswt_cable.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="19" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/switches/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.215311">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/signin.css.scss">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/switch_cables/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="servers.css.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="12" selection-start="488" selection-end="488" vertical-scroll-proportion="0.5815832">
+            <state line="38" column="43" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-19.333334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/switch_cables/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0">
+            <state line="49" column="40" selection-start="687" selection-end="687" vertical-scroll-proportion="-21.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/cables/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="48" selection-start="585" selection-end="601" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -148,37 +165,35 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="419" selection-end="419" vertical-scroll-proportion="-1.7088608">
+            <state line="28" column="7" selection-start="950" selection-end="950" vertical-scroll-proportion="-16.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="20130813171141_add_switch_id_and_server_id_to_switch_cables.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130813171141_add_switch_id_and_server_id_to_switch_cables.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="386" selection-end="386" vertical-scroll-proportion="-8.75">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/signin/signin.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/switch_cables/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="153" selection-end="153" vertical-scroll-proportion="-0.9493671">
+            <state line="72" column="30" selection-start="2215" selection-end="2215" vertical-scroll-proportion="-20.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/cables/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="13" column="0" selection-start="397" selection-end="617" vertical-scroll-proportion="-8.125">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,22 +216,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/servers.js.coffee" />
-        <option value="$PROJECT_DIR$/vendor/assets/javascripts/Alert_Fadeout.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/signin.css.scss" />
-        <option value="$PROJECT_DIR$/app/controllers/signin_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/omniauth.rb" />
-        <option value="$PROJECT_DIR$/db/development.sqlite3" />
-        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/servers/_admin_index.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/signin/signin.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/servers/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/switches/_admin_index.erb" />
+        <option value="$PROJECT_DIR$/app/views/switches/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/switch_cable.rb" />
+        <option value="$PROJECT_DIR$/app/views/switches/_admin_show.erb" />
+        <option value="$PROJECT_DIR$/app/views/switch_cables/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/servers/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/cables/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130813172019_rename.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130813151554_create_switch_cables.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130813172929_renameswt_cable.rb" />
+        <option value="$PROJECT_DIR$/app/views/cables/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/switch_cables/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/switch_cables/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/switch_cables/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/switches/index.html.erb" />
       </list>
     </option>
   </component>
@@ -332,6 +347,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendQR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trend__QR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -361,6 +390,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendQR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trend__QR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,6 +458,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendQR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trend__QR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="switches" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendQR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trend__QR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="switch_cables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -616,8 +707,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -919,7 +1010,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3119935" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3176661" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -995,116 +1086,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/servers/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/switches/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="705" selection-end="705" vertical-scroll-proportion="-24.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/switches/_admin_show.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="148" selection-end="148" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="46" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/servers/_admin_index.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="75" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-24.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/servers/_admin_show.erb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cables/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/switch_cables/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/signin/signin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="153" selection-end="153" vertical-scroll-proportion="-0.9493671">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/servers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="386" selection-end="386" vertical-scroll-proportion="-8.75">
+        <state line="1" column="38" selection-start="62" selection-end="62" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/servers/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="419" selection-end="419" vertical-scroll-proportion="-1.7088608">
+        <state line="28" column="7" selection-start="950" selection-end="950" vertical-scroll-proportion="-16.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/cables/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="47" selection-start="640" selection-end="640" vertical-scroll-proportion="-8.75">
+        <state line="13" column="0" selection-start="397" selection-end="617" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/signin.css.scss">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130813171141_add_switch_id_and_server_id_to_switch_cables.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130813151554_create_switch_cables.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="10" column="21" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/servers.css.scss">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130813172929_renameswt_cable.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="488" selection-end="488" vertical-scroll-proportion="0.5815832">
+        <state line="2" column="19" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cables/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="48" selection-start="585" selection-end="601" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/switch_cables/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="43" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-19.333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/switch_cables/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="40" selection-start="687" selection-end="687" vertical-scroll-proportion="-21.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/switch_cables/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="30" selection-start="2215" selection-end="2215" vertical-scroll-proportion="-20.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/switches/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.215311">
           <folding />
         </state>
       </provider>

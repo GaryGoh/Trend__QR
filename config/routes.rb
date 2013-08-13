@@ -1,5 +1,13 @@
 TrendQr::Application.routes.draw do
 
+
+  #root :to => 'servers#index'
+
+  resources :switches do
+    resources :switch_cables
+  end
+
+
   get "signin/signin"
 
   resources :users
@@ -59,7 +67,7 @@ TrendQr::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  #root :to => 'welcome#index'
+  root :to => 'servers#index'
 
   # See how all your routes lay out with "rake routes"
 
@@ -74,7 +82,6 @@ TrendQr::Application.routes.draw do
   match "/signout" => "sessions#destroy", :as => :signout
 
   match "/auth/failure", to: "sessions#failure"
-
 
 
 end

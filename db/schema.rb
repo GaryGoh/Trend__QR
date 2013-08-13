@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130811132610) do
+ActiveRecord::Schema.define(:version => 20130813172929) do
 
   create_table "cables", :force => true do |t|
     t.integer  "server_id"
@@ -43,6 +43,31 @@ ActiveRecord::Schema.define(:version => 20130811132610) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "extension"
+  end
+
+  create_table "switch_cables", :force => true do |t|
+    t.string   "cable_type"
+    t.integer  "vlan"
+    t.string   "mode"
+    t.string   "from_device"
+    t.string   "to_device"
+    t.string   "from_port"
+    t.string   "to_port"
+    t.string   "protocal"
+    t.string   "color"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "switch_id"
+    t.integer  "server_id"
+  end
+
+  create_table "switches", :force => true do |t|
+    t.string   "switch_name"
+    t.integer  "num_ports"
+    t.integer  "rack"
+    t.string   "admin_ip"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|

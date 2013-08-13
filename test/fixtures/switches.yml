@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  switch_name: MyString
+  num_ports: 1
+  rack: 1
+  admin_ip: MyString
+
+two:
+  switch_name: MyString
+  num_ports: 1
+  rack: 1
+  admin_ip: MyString

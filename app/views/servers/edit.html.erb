@@ -1,7 +1,9 @@
-<h1>Editing server</h1>
+<div class="container">
+  <h1>Editing <%= @server.name %></h1>
 
-<%= render 'form' %>
-<h5>
-  <%= link_to 'Show', @server %> |
-  <%= link_to 'Back', servers_path %>
-</h5>
+  <%= render 'form' %>
+  <h5>
+    <%= link_to 'Show', @server %> |
+    <%= link_to 'Back', servers_path %>
+  </h5>
+</div>

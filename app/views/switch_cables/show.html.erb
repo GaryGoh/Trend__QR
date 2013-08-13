@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @switch_cable.cable_type %>
+</p>
+
+<p>
+  <b>Vlan:</b>
+  <%= @switch_cable.vlan %>
+</p>
+
+<p>
+  <b>Mode:</b>
+  <%= @switch_cable.mode %>
+</p>
+
+<p>
+  <b>From device:</b>
+  <%= @switch_cable.from_device %>
+</p>
+
+<p>
+  <b>To device:</b>
+  <%= @switch_cable.to_device %>
+</p>
+
+<p>
+  <b>From port:</b>
+  <%= @switch_cable.from_port %>
+</p>
+
+<p>
+  <b>To port:</b>
+  <%= @switch_cable.to_port %>
+</p>
+
+<p>
+  <b>Protocal:</b>
+  <%= @switch_cable.protocal %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @switch_cable.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_switch_switch_cable_path(@switch, @switch_cable) %> |
+<%= link_to 'Back', switch_switch_cables_path(@switch) %>
+

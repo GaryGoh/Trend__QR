@@ -7,7 +7,7 @@ class ServersController < ApplicationController
     #@servers = Server.all
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @servers }
+                  #format.json { render json: @servers }
     end
   end
 
@@ -18,7 +18,7 @@ class ServersController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @server }
+                  #format.json { render json: @server }
     end
   end
 
@@ -28,7 +28,7 @@ class ServersController < ApplicationController
     @server = Server.new
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @server }
+                  #format.json { render json: @server }
     end
   end
 
@@ -47,10 +47,10 @@ class ServersController < ApplicationController
     respond_to do |format|
       if @server.save
         format.html { redirect_to @server, notice: 'Server was successfully created.' }
-        format.json { render json: @server, status: :created, location: @server }
+        #format.json { render json: @server, status: :created, location: @server }
       else
         format.html { render action: "new" }
-        format.json { render json: @server.errors, status: :unprocessable_entity }
+        #format.json { render json: @server.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -63,10 +63,10 @@ class ServersController < ApplicationController
     respond_to do |format|
       if @server.update_attributes(params[:server])
         format.html { redirect_to @server, notice: 'Server was successfully updated.' }
-        format.json { head :no_content }
+        #format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @server.errors, status: :unprocessable_entity }
+        #format.json { render json: @server.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -79,7 +79,7 @@ class ServersController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to servers_url }
-      format.json { head :no_content }
+      #format.json { head :no_content }
     end
   end
 

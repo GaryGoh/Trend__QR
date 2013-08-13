@@ -9,23 +9,25 @@
     <div class="tab-pane active" id="server">
       <div class="span12">
         <% if notice != nil %>
-          <div class="alert alert-success" id="index_alert">
-            <%= notice %>
-          </div>
-          <script type="text/javascript">
-              $('#index_alert').fadeOut(3000)
-          </script>
-      <% end %>
-      <% if current_user %>
-          <%= render 'servers/admin_index' %>
-      <% else %>
-          <%= render 'servers/public_index' %>
-      <% end %>
+            <div class="alert alert-success" id="index_alert">
+              <%= notice %>
+            </div>
+            <script type="text/javascript">
+                $('#index_alert').fadeOut(3000)
+            </script>
+        <% end %>
+        <% if current_user %>
+            <%= render 'servers/admin_index' %>
+        <% else %>
+            <%= render 'servers/public_index' %>
+        <% end %>
       </div>
     </div>
 
     <div class="tab-pane" id="switch">
-      <p>Howdy, I'm in Section 2.</p>
+      <div class="span12">
+
+      </div>
     </div>
 
     <div class="tab-pane" id="storage">

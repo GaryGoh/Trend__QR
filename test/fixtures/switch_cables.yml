@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  vlan: 1
+  mode: MyString
+  from_device: MyString
+  to_device: MyString
+  from_port: MyString
+  to_port: MyString
+  protocal: MyString
+  color: MyString
+
+two:
+  type: 
+  vlan: 1
+  mode: MyString
+  from_device: MyString
+  to_device: MyString
+  from_port: MyString
+  to_port: MyString
+  protocal: MyString
+  color: MyString
