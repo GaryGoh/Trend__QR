@@ -12,7 +12,6 @@ TrendQr::Application.routes.draw do
 
   resources :users
 
-
   resources :servers do
     resources :cables
   end
@@ -74,6 +73,9 @@ TrendQr::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   match ':controller(/:action(/:id))(.:format)'
+
+  match '/faq/faq' => "faq#faq"
+
 
   # To match sessions' path
   match "/auth/:provider/callback" => "sessions#create"

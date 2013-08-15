@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-dropdown
 //= require bootstrap-tab
+//= require bootstrap-collapse
 
 //= require jquery-1.8.1.min.js
 
